@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+  </head>
+  <body>
+   <form action='/survey/process' method='POST'>
+   		Your Name: <input type='text' name='name'><br>
+   		Your Location:<select name='location'>
+   			<option value='california'>California</option>
+   			<option value='washington'>Washington</option>
+   			<option value='texas'>Texas</option>
+   		</select><br>
+   		Favorite language: <select name='language'>
+	   		<option value='php'>PHP</option>
+	   		<option value='javascript'>Javascript</option>
+	   		<option value='python'>Python</option>
+	   		<option value='ruby'>Ruby</option>
+	   	</select><br>
+	   	Your comments: <input type='textarea' default='Yay for surveys!' name='comment'><br>
+	   	<input type='submit' value="Post Survey">
+   </form>
+  </body>
+</html>
